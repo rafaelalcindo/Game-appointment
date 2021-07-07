@@ -19,12 +19,11 @@ import { useAuth } from '../../hooks/auth';
 
 export function SignIn() {
     // const [text, setText] = useState('');
-    const navigation = useNavigation();
 
-    const { user } = useAuth();
+    const { user, signIn } = useAuth();
 
     function handleSignIn() {
-        navigation.navigate('Home')
+        
     }
 
     return (
